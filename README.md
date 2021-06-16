@@ -14,15 +14,8 @@ Are Liberals and the Left impossible to distinguish from one another?
 
 
 ## The Dataset
-I used the PushshiftAPI from the pmaw library for scraping various subreddits for this project
-For the Liberal subreddit I went with Pod Save America’s FriendsofthePod, and for the Left wanted to start with ultra-left tendencies like (the ironically named?) InformedTankie subreddit, but that ended up being a limiting factor, and although I could use a library like [imbalanced-learn](https://imbalanced-learn.org/stable/) to balance the training and testing sets, I wanted a larger dataset, so I also went to the IWW and communism subreddits, weighing each to end up with about one third of each that would all be encoded the same once it came time to binarize the ‘subreddit’ column
+There aren't entirely analagous Liberal and Left subreddits, but I believe I chose two that illustrate the differences well. I knew early on that I wanted Pod Save America's r/FriendsoftheePod for the Liberal subreddit, because it's bit more than just a podcast. Made up of former Obama comms department staffers, Pod Save America is the flagiship podcast of Crooked Media, practically a clearing house for the establishment of the Democratic Party and a seeminly essential waypoint for both veteran and up-and-coming Liberal political figures. But, there's not really a leftwing media property equivalent. Even if Reddit hadn't axed r/ChapoTrapHouse last year, they're just wholly different in both scope and fuction; one can land interviews with Barrack Obama or Joe Biden, the other's big gets are Adam McKay and Marianne Williamson. It's really kind of difficult to imagine what a Left-wing Pod Save America would even be, so instead I chose r/IWW, the Industrial Workers of the World subreddit for the Left alternative. Pod Save America makes sense in the way that Liberals are often highly concerned with being well represented by those in power, while the IWW makes sense as Leftists are concered with building a base of politcial power. Difficult as I think it is to imagine a Lefty-Pod Save America, I can imagine that a Liberal-IWW would come to resemble Pod Save America more and more over time in its functions and goals
 
-| Subreddit | Political Orientation| Posts Scrapped |
-| ----------- | ----------- | ----------- |
-| FriendsofthePod | Liberal      | 1781       |
-| communism | Left   | 608        |
-| IWW | Left   | 674        |
-| InfromedTankie | Left   | 603        |
 
 Resulting, after data cleaning, in a dataset with the following class distribution:
 ```python
